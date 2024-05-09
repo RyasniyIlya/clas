@@ -1115,9 +1115,13 @@ let chuVaki = [
     ];
     /* let usernamas = chuVaki.map(usernamas => usernamas.name)
     console.log(usernamas) */
-    function userColorEye(users, eyecolor) {
+    /* function userColorEye(users, eyecolor) {
         return users.filter(user => user.eyecolor === eyecolor);
     }
     
     console.log(userColorEye)
-    
+     */
+    function invalidUsers(users) {
+        return users.filter(user => !user.isActive);
+    }
+    console.log(invalidUsers)
