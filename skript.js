@@ -1128,3 +1128,11 @@ let chuVaki = [
     function emailUsers(users, email) {
         return users.find(user => user.email === email);
     }
+    function userage(users, minAge, maxAge) {
+        return users.filter(user => user.age >= minAge && user.age <= maxAge);
+    }
+    console.log(userage)
+    function balanceuser(users) {
+        return users.reduce((sumbalance, user) => sumbalance + user.balance, 0);
+    }
+    console.log(balanceuser)
