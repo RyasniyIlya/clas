@@ -1113,5 +1113,11 @@ let chuVaki = [
     age: 39,
     },
     ];
-    let usernamas = chuVaki.map(usernamas => usernamas.name)
-    console.log(usernamas)
+    /* let usernamas = chuVaki.map(usernamas => usernamas.name)
+    console.log(usernamas) */
+    function userColorEye(users, eyecolor) {
+        return users.filter(user => user.eyecolor === eyecolor);
+    }
+    
+    console.log(userColorEye)
+    
