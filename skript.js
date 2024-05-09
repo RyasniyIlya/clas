@@ -1125,3 +1125,6 @@ let chuVaki = [
         return users.filter(user => !user.isActive);
     }
     console.log(invalidUsers)
+    function emailUsers(users, email) {
+        return users.find(user => user.email === email);
+    }
